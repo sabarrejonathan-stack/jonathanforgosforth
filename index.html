@@ -1,1 +1,1318 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jonathan Sabarre - Labour for Gosforth | jonathanforgosforth.uk</title>
+
+    <link rel="canonical" href="https://www.jonathanforgosforth.uk">
+
+    <style>
+
+        :root {
+
+            --labour-red: #E4003B;
+
+            --labour-dark: #C8002F;
+
+            --dark-bg: #1a1a2e;
+
+            --text-dark: #222;
+
+            --text-light: #fff;
+
+            --grey-light: #f5f5f5;
+
+            --grey-mid: #e0e0e0;
+
+        }
+
+
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+
+
+        body {
+
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+            color: var(--text-dark);
+
+            line-height: 1.6;
+
+        }
+
+
+
+        /* ââ Navigation ââ */
+
+        nav {
+
+            background: var(--dark-bg);
+
+            padding: 0.75rem 2rem;
+
+            position: fixed;
+
+            width: 100%;
+
+            top: 0;
+
+            z-index: 100;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+        }
+
+
+
+        nav .logo {
+
+            color: var(--text-light);
+
+            font-weight: 700;
+
+            font-size: 1.1rem;
+
+            text-decoration: none;
+
+        }
+
+
+
+        nav .logo span {
+
+            color: var(--labour-red);
+
+        }
+
+
+
+        nav ul {
+
+            list-style: none;
+
+            display: flex;
+
+            gap: 1.5rem;
+
+        }
+
+
+
+        nav ul li a {
+
+            color: #ccc;
+
+            text-decoration: none;
+
+            font-size: 0.95rem;
+
+            transition: color 0.2s;
+
+        }
+
+
+
+        nav ul li a:hover {
+
+            color: var(--text-light);
+
+        }
+
+
+
+        .mobile-menu-btn {
+
+            display: none;
+
+            background: none;
+
+            border: none;
+
+            color: var(--text-light);
+
+            font-size: 1.5rem;
+
+            cursor: pointer;
+
+        }
+
+
+
+        /* ââ Hero ââ */
+
+        .hero {
+
+            background: linear-gradient(135deg, var(--labour-red) 0%, var(--labour-dark) 60%, var(--dark-bg) 100%);
+
+            color: var(--text-light);
+
+            padding: 10rem 2rem 6rem;
+
+            text-align: center;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+
+
+        .hero::before {
+
+            content: '';
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            right: 0;
+
+            bottom: 0;
+
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+        }
+
+
+
+        .hero-content {
+
+            position: relative;
+
+            max-width: 800px;
+
+            margin: 0 auto;
+
+        }
+
+
+
+        .hero .ward-label {
+
+            display: inline-block;
+
+            background: rgba(255, 255, 255, 0.15);
+
+            border: 1px solid rgba(255, 255, 255, 0.3);
+
+            padding: 0.4rem 1.2rem;
+
+            border-radius: 50px;
+
+            font-size: 0.9rem;
+
+            letter-spacing: 0.05em;
+
+            text-transform: uppercase;
+
+            margin-bottom: 1.5rem;
+
+        }
+
+
+
+        .hero h1 {
+
+            font-size: 3.5rem;
+
+            font-weight: 800;
+
+            line-height: 1.15;
+
+            margin-bottom: 1rem;
+
+        }
+
+
+
+        .hero .tagline {
+
+            font-size: 1.3rem;
+
+            opacity: 0.9;
+
+            margin-bottom: 2.5rem;
+
+            font-weight: 300;
+
+        }
+
+
+
+        .hero-buttons {
+
+            display: flex;
+
+            gap: 1rem;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+        }
+
+
+
+        .btn {
+
+            display: inline-block;
+
+            padding: 0.85rem 2rem;
+
+            border-radius: 6px;
+
+            font-size: 1rem;
+
+            font-weight: 600;
+
+            text-decoration: none;
+
+            transition: transform 0.2s, box-shadow 0.2s;
+
+            cursor: pointer;
+
+            border: none;
+
+        }
+
+
+
+        .btn:hover {
+
+            transform: translateY(-2px);
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+        }
+
+
+
+        .btn-white {
+
+            background: var(--text-light);
+
+            color: var(--labour-red);
+
+        }
+
+
+
+        .btn-outline {
+
+            background: transparent;
+
+            color: var(--text-light);
+
+            border: 2px solid var(--text-light);
+
+        }
+
+
+
+        .btn-red {
+
+            background: var(--labour-red);
+
+            color: var(--text-light);
+
+        }
+
+
+
+        /* ââ Section base ââ */
+
+        section {
+
+            padding: 5rem 2rem;
+
+        }
+
+
+
+        .section-inner {
+
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+        }
+
+
+
+        .section-title {
+
+            font-size: 2rem;
+
+            font-weight: 700;
+
+            margin-bottom: 0.5rem;
+
+        }
+
+
+
+        .section-subtitle {
+
+            color: #666;
+
+            margin-bottom: 3rem;
+
+            font-size: 1.1rem;
+
+        }
+
+
+
+        .red-bar {
+
+            width: 50px;
+
+            height: 4px;
+
+            background: var(--labour-red);
+
+            margin-bottom: 1rem;
+
+        }
+
+
+
+        /* ââ Priorities ââ */
+
+        .priorities {
+
+            background: var(--grey-light);
+
+        }
+
+
+
+        .priorities-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+            gap: 2rem;
+
+        }
+
+
+
+        .priority-card {
+
+            background: #fff;
+
+            border-radius: 10px;
+
+            padding: 2rem;
+
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+
+            border-top: 4px solid var(--labour-red);
+
+            transition: transform 0.2s;
+
+        }
+
+
+
+        .priority-card:hover {
+
+            transform: translateY(-4px);
+
+        }
+
+
+
+        .priority-icon {
+
+            font-size: 2rem;
+
+            margin-bottom: 1rem;
+
+            display: inline-block;
+
+            width: 56px;
+
+            height: 56px;
+
+            line-height: 56px;
+
+            text-align: center;
+
+            background: #fce4ec;
+
+            border-radius: 12px;
+
+        }
+
+
+
+        .priority-card h3 {
+
+            font-size: 1.2rem;
+
+            margin-bottom: 0.6rem;
+
+        }
+
+
+
+        .priority-card p {
+
+            color: #555;
+
+            font-size: 0.95rem;
+
+        }
+
+
+
+        /* ââ About ââ */
+
+        .about {
+
+            background: #fff;
+
+        }
+
+
+
+        .about-grid {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1.5fr;
+
+            gap: 3rem;
+
+            align-items: center;
+
+        }
+
+
+
+        .about-photo {
+
+            background: var(--grey-mid);
+
+            border-radius: 12px;
+
+            aspect-ratio: 4 / 5;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #999;
+
+            font-size: 0.95rem;
+
+            text-align: center;
+
+            padding: 1rem;
+
+        }
+
+
+
+        .about-text p {
+
+            margin-bottom: 1rem;
+
+            color: #444;
+
+        }
+
+
+
+        .about-text blockquote {
+
+            border-left: 4px solid var(--labour-red);
+
+            padding-left: 1.25rem;
+
+            font-style: italic;
+
+            color: #555;
+
+            margin: 1.5rem 0;
+
+            font-size: 1.1rem;
+
+        }
+
+
+
+        /* ââ Get Involved ââ */
+
+        .get-involved {
+
+            background: var(--dark-bg);
+
+            color: var(--text-light);
+
+        }
+
+
+
+        .get-involved .section-subtitle {
+
+            color: #aaa;
+
+        }
+
+
+
+        .get-involved .red-bar {
+
+            background: var(--labour-red);
+
+        }
+
+
+
+        .involve-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+            gap: 2rem;
+
+        }
+
+
+
+        .involve-card {
+
+            background: rgba(255, 255, 255, 0.06);
+
+            border: 1px solid rgba(255, 255, 255, 0.1);
+
+            border-radius: 10px;
+
+            padding: 2rem;
+
+            text-align: center;
+
+            transition: background 0.2s;
+
+        }
+
+
+
+        .involve-card:hover {
+
+            background: rgba(255, 255, 255, 0.1);
+
+        }
+
+
+
+        .involve-card .icon {
+
+            font-size: 2.2rem;
+
+            margin-bottom: 1rem;
+
+        }
+
+
+
+        .involve-card h3 {
+
+            margin-bottom: 0.5rem;
+
+        }
+
+
+
+        .involve-card p {
+
+            color: #aaa;
+
+            font-size: 0.9rem;
+
+            margin-bottom: 1.25rem;
+
+        }
+
+
+
+        /* ââ Contact ââ */
+
+        .contact {
+
+            background: var(--grey-light);
+
+        }
+
+
+
+        .contact-grid {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 3rem;
+
+        }
+
+
+
+        .contact-info-item {
+
+            display: flex;
+
+            gap: 1rem;
+
+            margin-bottom: 1.5rem;
+
+            align-items: flex-start;
+
+        }
+
+
+
+        .contact-info-item .icon-circle {
+
+            flex-shrink: 0;
+
+            width: 44px;
+
+            height: 44px;
+
+            background: var(--labour-red);
+
+            color: #fff;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 1.1rem;
+
+        }
+
+
+
+        .contact-info-item h4 {
+
+            font-size: 0.95rem;
+
+            margin-bottom: 0.15rem;
+
+        }
+
+
+
+        .contact-info-item p {
+
+            color: #555;
+
+            font-size: 0.9rem;
+
+        }
+
+
+
+        .contact-form {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 1rem;
+
+        }
+
+
+
+        .contact-form input,
+
+        .contact-form textarea {
+
+            padding: 0.85rem 1rem;
+
+            border: 1px solid var(--grey-mid);
+
+            border-radius: 6px;
+
+            font-family: inherit;
+
+            font-size: 0.95rem;
+
+            width: 100%;
+
+            background: #fff;
+
+        }
+
+
+
+        .contact-form input:focus,
+
+        .contact-form textarea:focus {
+
+            outline: none;
+
+            border-color: var(--labour-red);
+
+            box-shadow: 0 0 0 3px rgba(228, 0, 59, 0.1);
+
+        }
+
+
+
+        .contact-form textarea {
+
+            resize: vertical;
+
+            min-height: 120px;
+
+        }
+
+
+
+        /* ââ Footer ââ */
+
+        footer {
+
+            background: var(--dark-bg);
+
+            color: #aaa;
+
+            text-align: center;
+
+            padding: 2rem;
+
+            font-size: 0.85rem;
+
+        }
+
+
+
+        footer p + p {
+
+            margin-top: 0.4rem;
+
+        }
+
+
+
+        footer a {
+
+            color: var(--labour-red);
+
+            text-decoration: none;
+
+        }
+
+
+
+        /* ââ Responsive ââ */
+
+        @media (max-width: 768px) {
+
+            nav ul {
+
+                display: none;
+
+                position: absolute;
+
+                top: 100%;
+
+                left: 0;
+
+                right: 0;
+
+                background: var(--dark-bg);
+
+                flex-direction: column;
+
+                padding: 1rem 2rem;
+
+                gap: 0.75rem;
+
+            }
+
+
+
+            nav ul.open {
+
+                display: flex;
+
+            }
+
+
+
+            .mobile-menu-btn {
+
+                display: block;
+
+            }
+
+
+
+            .hero {
+
+                padding: 8rem 1.5rem 4rem;
+
+            }
+
+
+
+            .hero h1 {
+
+                font-size: 2.2rem;
+
+            }
+
+
+
+            .hero .tagline {
+
+                font-size: 1.05rem;
+
+            }
+
+
+
+            .about-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+
+            .about-photo {
+
+                max-width: 320px;
+
+                margin: 0 auto;
+
+            }
+
+
+
+            .contact-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+
+            section {
+
+                padding: 3.5rem 1.5rem;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+<!-- Navigation -->
+
+<nav>
+
+    <a href="#" class="logo"><span>Labour</span> | Gosforth</a>
+
+    <button class="mobile-menu-btn" aria-label="Toggle menu" onclick="document.querySelector('nav ul').classList.toggle('open')">&#9776;</button>
+
+    <ul>
+
+        <li><a href="#priorities">Priorities</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#involve">Get Involved</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+
+
+<!-- Hero Banner -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="ward-label">Labour candidate &mdash; Gosforth Ward</div>
+
+        <h1>Jonathan Sabarre</h1>
+
+        <p class="tagline">Standing up for Gosforth on Newcastle City Council</p>
+
+        <div class="hero-buttons">
+
+            <a href="#involve" class="btn btn-white">Volunteer with us</a>
+
+            <a href="#priorities" class="btn btn-outline">Our priorities</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Key Local Priorities -->
+
+<section class="priorities" id="priorities">
+
+    <div class="section-inner">
+
+        <div class="red-bar"></div>
+
+        <h2 class="section-title">Key Priorities for Gosforth</h2>
+
+        <p class="section-subtitle">The issues that matter most to our community</p>
+
+
+
+        <div class="priorities-grid">
+
+            <div class="priority-card">
+
+                <div class="priority-icon">&#127971;</div>
+
+                <h3>Safer, Cleaner Streets</h3>
+
+                <p>Pushing for better street lighting, regular maintenance, and tackling anti-social behaviour to make every part of Gosforth a safe place to live and walk.</p>
+
+            </div>
+
+            <div class="priority-card">
+
+                <div class="priority-icon">&#128652;</div>
+
+                <h3>Better Transport Links</h3>
+
+                <p>Campaigning for improved bus services, safer cycling routes, and responsible traffic management that works for residents and local businesses alike.</p>
+
+            </div>
+
+            <div class="priority-card">
+
+                <div class="priority-icon">&#127793;</div>
+
+                <h3>Protecting Green Spaces</h3>
+
+                <p>Defending Gosforth's parks and green corridors from overdevelopment, and investing in community gardens and play areas for families.</p>
+
+            </div>
+
+            <div class="priority-card">
+
+                <div class="priority-icon">&#127960;</div>
+
+                <h3>Affordable Housing</h3>
+
+                <p>Supporting genuinely affordable new homes and pushing back against developments that don't meet the needs of local people and families.</p>
+
+            </div>
+
+            <div class="priority-card">
+
+                <div class="priority-icon">&#127979;</div>
+
+                <h3>Schools &amp; Young People</h3>
+
+                <p>Ensuring local schools get the funding and support they need, and expanding opportunities for children and young people across the ward.</p>
+
+            </div>
+
+            <div class="priority-card">
+
+                <div class="priority-icon">&#129309;</div>
+
+                <h3>Stronger Community</h3>
+
+                <p>Supporting local businesses on Gosforth High Street, community groups, and making sure residents have a genuine voice in council decisions.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- About Me -->
+
+<section class="about" id="about">
+
+    <div class="section-inner">
+
+        <div class="about-grid">
+
+            <div class="about-photo" style="background: none; overflow: hidden; padding: 0;">
+
+                <img src="bio.jpg" alt="Jonathan Sabarre - Labour candidate for Gosforth" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+
+            </div>
+
+            <div class="about-text">
+
+                <div class="red-bar"></div>
+
+                <h2 class="section-title">About Me</h2>
+
+                <p>I'm <strong>Jonathan Sabarre</strong>, and I'm proud to be Labour's candidate for Gosforth ward on Newcastle City Council. I've lived in Gosforth for [X] years and I care deeply about the future of our community.</p>
+
+                <p>With a background in [your background], I understand the challenges facing local families and I'm determined to be a councillor who listens, acts, and delivers for everyone in our ward.</p>
+
+                <blockquote>"Gosforth deserves a councillor who will fight for our community &mdash; not just at election time, but every single day."</blockquote>
+
+                <p>I'm a member of [local group/union/organisation] and a proud Labour Party member because I believe in fairness, opportunity, and a council that puts people first.</p>
+
+                <a href="#contact" class="btn btn-red" style="margin-top: 0.5rem;">Get in touch</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Get Involved -->
+
+<section class="get-involved" id="involve">
+
+    <div class="section-inner">
+
+        <div class="red-bar"></div>
+
+        <h2 class="section-title">Get Involved</h2>
+
+        <p class="section-subtitle">This campaign belongs to the whole community. Here's how you can help.</p>
+
+
+
+        <div class="involve-grid">
+
+            <div class="involve-card">
+
+                <div class="icon">&#128075;</div>
+
+                <h3>Volunteer</h3>
+
+                <p>Join us on the doorstep, deliver leaflets, or help out on polling day. Every hour makes a difference.</p>
+
+                <a href="#contact" class="btn btn-red">Sign up</a>
+
+            </div>
+
+            <div class="involve-card">
+
+                <div class="icon">&#128232;</div>
+
+                <h3>Display a Poster</h3>
+
+                <p>Show your support by putting a Labour poster in your window. We'll drop one round to you.</p>
+
+                <a href="#contact" class="btn btn-red">Request a poster</a>
+
+            </div>
+
+            <div class="involve-card">
+
+                <div class="icon">&#128227;</div>
+
+                <h3>Spread the Word</h3>
+
+                <p>Share our campaign with friends, family and neighbours. Follow us on social media and share our posts.</p>
+
+                <a href="#contact" class="btn btn-red">Follow us</a>
+
+            </div>
+
+            <div class="involve-card">
+
+                <div class="icon">&#127801;</div>
+
+                <h3>Join Labour</h3>
+
+                <p>Become a Labour Party member and help shape the future of our community from the inside.</p>
+
+                <a href="https://join.labour.org.uk" class="btn btn-red" target="_blank" rel="noopener">Join today</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Contact -->
+
+<section class="contact" id="contact">
+
+    <div class="section-inner">
+
+        <div class="red-bar"></div>
+
+        <h2 class="section-title">Contact</h2>
+
+        <p class="section-subtitle">Have a question, concern, or want to get involved? I'd love to hear from you.</p>
+
+
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <div class="contact-info-item">
+
+                    <div class="icon-circle">&#9993;</div>
+
+                    <div>
+
+                        <h4>Email</h4>
+
+                        <p>yourname@example.com</p>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-info-item">
+
+                    <div class="icon-circle">&#9742;</div>
+
+                    <div>
+
+                        <h4>Phone</h4>
+
+                        <p>07XXX XXXXXX</p>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-info-item">
+
+                    <div class="icon-circle">&#9873;</div>
+
+                    <div>
+
+                        <h4>Ward</h4>
+
+                        <p>Gosforth Ward, Newcastle upon Tyne</p>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-info-item">
+
+                    <div class="icon-circle">&#64;</div>
+
+                    <div>
+
+                        <h4>Social Media</h4>
+
+                        <p>@YourHandle on Facebook, X, and Instagram</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your message! I will get back to you soon.');">
+
+                <input type="text" name="name" placeholder="Your name" required>
+
+                <input type="email" name="email" placeholder="Your email" required>
+
+                <input type="text" name="subject" placeholder="Subject">
+
+                <textarea name="message" placeholder="Your message" required></textarea>
+
+                <button type="submit" class="btn btn-red">Send Message</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>Promoted by [Agent Name] on behalf of Jonathan Sabarre, both at [Address], Newcastle upon Tyne.</p>
+
+    <p>Published and promoted by the Labour Party, 150 Walworth Road, London SE17 1JT.</p>
+
+    <p style="margin-top: 0.75rem;">&copy; 2026 Labour for Gosforth | <a href="https://www.jonathanforgosforth.uk">jonathanforgosforth.uk</a></p>
+
+</footer>
+
+
+
+</body>
+
+</html>
 
