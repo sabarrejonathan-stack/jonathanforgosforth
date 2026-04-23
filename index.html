@@ -1,1274 +1,810 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Jonathan Sabarre - Labour for Gosforth | jonathanforgosfhorth.uk</title>
-
-    <meta name="description" content="Jonathan Sabarre is Labour's candidate for Gosforth Ward, Newcastle City Council. A community leader, school governor, and global education consultant â fighting for a thriving High Street, better transport, and to become Gosforth's first-ever Labour councillor.">
-
+    <title>Jonathan Sabarre - Labour for Gosforth | jonathanforgosforth.uk</title>
+    <meta name="description" content="Jonathan Sabarre is Labour's candidate for Gosforth Ward, Newcastle City Council. A community leader, school governor, and global education consultant — fighting for a thriving High Street, better transport, and to become Gosforth's first-ever Labour councillor.">
     <meta name="keywords" content="Jonathan Sabarre, Labour, Gosforth, Newcastle, councillor, council election 2026, Gosforth Ward">
-
     <meta property="og:title" content="Jonathan Sabarre - Labour for Gosforth">
-
-    <meta property="og:description" content="Be part of history. Gosforth has never had a Labour councillor â Jonathan Sabarre is ready to change that.">
-
+    <meta property="og:description" content="Be part of history. Gosforth has never had a Labour councillor — Jonathan Sabarre is ready to change that.">
     <meta property="og:url" content="https://www.jonathanforgosforth.uk">
-
     <meta property="og:type" content="website">
-
     <link rel="canonical" href="https://www.jonathanforgosforth.uk">
-
     <style>
-
         :root {
-
             --labour-red: #E4003B;
-
             --labour-dark: #C8002F;
-
             --dark-bg: #1a1a2e;
-
             --text-dark: #222;
-
             --text-light: #fff;
-
             --grey-light: #f5f5f5;
-
             --grey-mid: #e0e0e0;
-
         }
-
-
 
         * {
-
             margin: 0;
-
             padding: 0;
-
             box-sizing: border-box;
-
         }
-
-
 
         body {
-
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-
             color: var(--text-dark);
-
             line-height: 1.6;
-
         }
 
-
-
-        /* ââ Navigation ââ */
-
+        /* ── Navigation ── */
         nav {
-
             background: var(--dark-bg);
-
             padding: 0.75rem 2rem;
-
             position: fixed;
-
             width: 100%;
-
             top: 0;
-
             z-index: 100;
-
             display: flex;
-
             justify-content: space-between;
-
             align-items: center;
-
         }
-
-
 
         nav .logo {
-
             color: var(--text-light);
-
             font-weight: 700;
-
             font-size: 1.1rem;
-
             text-decoration: none;
-
         }
-
-
 
         nav .logo span {
-
             color: var(--labour-red);
-
         }
-
-
 
         nav ul {
-
             list-style: none;
-
             display: flex;
-
             gap: 1.5rem;
-
         }
-
-
 
         nav ul li a {
-
             color: #ccc;
-
             text-decoration: none;
-
             font-size: 0.95rem;
-
             transition: color 0.2s;
-
         }
-
-
 
         nav ul li a:hover {
-
             color: var(--text-light);
-
         }
-
-
 
         .mobile-menu-btn {
-
             display: none;
-
             background: none;
-
             border: none;
-
             color: var(--text-light);
-
             font-size: 1.5rem;
-
             cursor: pointer;
-
         }
 
-
-
-        /* ââ Hero ââ */
-
+        /* ── Hero ── */
         .hero {
-
             background: linear-gradient(135deg, var(--labour-red) 0%, var(--labour-dark) 60%, var(--dark-bg) 100%);
-
             color: var(--text-light);
-
             padding: 10rem 2rem 6rem;
-
             text-align: center;
-
             position: relative;
-
             overflow: hidden;
-
         }
-
-
 
         .hero::before {
-
             content: '';
-
             position: absolute;
-
             top: 0;
-
             left: 0;
-
             right: 0;
-
             bottom: 0;
-
             background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-
         }
-
-
 
         .hero-content {
-
             position: relative;
-
             max-width: 800px;
-
             margin: 0 auto;
-
         }
-
-
 
         .hero .ward-label {
-
             display: inline-block;
-
             background: rgba(255, 255, 255, 0.15);
-
             border: 1px solid rgba(255, 255, 255, 0.3);
-
             padding: 0.4rem 1.2rem;
-
             border-radius: 50px;
-
             font-size: 0.9rem;
-
             letter-spacing: 0.05em;
-
             text-transform: uppercase;
-
             margin-bottom: 1.5rem;
-
         }
-
-
 
         .hero h1 {
-
             font-size: 3.5rem;
-
             font-weight: 800;
-
             line-height: 1.15;
-
             margin-bottom: 1rem;
-
         }
-
-
 
         .hero .tagline {
-
             font-size: 1.3rem;
-
             opacity: 0.9;
-
             margin-bottom: 2.5rem;
-
             font-weight: 300;
-
         }
-
-
 
         .hero-buttons {
-
             display: flex;
-
             gap: 1rem;
-
             justify-content: center;
-
             flex-wrap: wrap;
-
         }
-
-
 
         .btn {
-
             display: inline-block;
-
             padding: 0.85rem 2rem;
-
             border-radius: 6px;
-
             font-size: 1rem;
-
             font-weight: 600;
-
             text-decoration: none;
-
             transition: transform 0.2s, box-shadow 0.2s;
-
             cursor: pointer;
-
             border: none;
-
         }
-
-
 
         .btn:hover {
-
             transform: translateY(-2px);
-
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-
         }
-
-
 
         .btn-white {
-
             background: var(--text-light);
-
             color: var(--labour-red);
-
         }
-
-
 
         .btn-outline {
-
             background: transparent;
-
             color: var(--text-light);
-
             border: 2px solid var(--text-light);
-
         }
-
-
 
         .btn-red {
-
             background: var(--labour-red);
-
             color: var(--text-light);
-
         }
 
+        .btn-whatsapp {
+            background: #25D366;
+            color: #fff;
+        }
 
+        .btn-whatsapp:hover {
+            background: #1ebe57;
+        }
 
-        /* ââ Section base ââ */
+        .btn-whatsapp-outline {
+            background: transparent;
+            color: #25D366;
+            border: 2px solid #25D366;
+        }
 
+        .btn-whatsapp-outline:hover {
+            background: #25D366;
+            color: #fff;
+        }
+
+        /* ── WhatsApp Community Section ── */
+        .whatsapp-cta {
+            background: linear-gradient(135deg, #075E54 0%, #128C7E 50%, #25D366 100%);
+            color: #fff;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .whatsapp-cta::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .whatsapp-cta .section-inner {
+            position: relative;
+        }
+
+        .whatsapp-icon-large {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .whatsapp-cta h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .whatsapp-cta .lead {
+            font-size: 1.2rem;
+            max-width: 650px;
+            margin: 0 auto 2rem;
+            opacity: 0.95;
+            line-height: 1.7;
+        }
+
+        .whatsapp-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-wa-hero {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 1rem 2.2rem;
+            background: #fff;
+            color: #075E54;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+        }
+
+        .btn-wa-hero:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .btn-wa-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 1rem 2.2rem;
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255,255,255,0.6);
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-wa-secondary:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: #fff;
+        }
+
+        .whatsapp-cta .member-count {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .wa-svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
+            flex-shrink: 0;
+        }
+
+        /* ── Section base ── */
         section {
-
             padding: 5rem 2rem;
-
         }
-
-
 
         .section-inner {
-
             max-width: 1100px;
-
             margin: 0 auto;
-
         }
-
-
 
         .section-title {
-
             font-size: 2rem;
-
             font-weight: 700;
-
             margin-bottom: 0.5rem;
-
         }
-
-
 
         .section-subtitle {
-
             color: #666;
-
             margin-bottom: 3rem;
-
             font-size: 1.1rem;
-
         }
-
-
 
         .red-bar {
-
             width: 50px;
-
             height: 4px;
-
             background: var(--labour-red);
-
             margin-bottom: 1rem;
-
         }
 
-
-
-        /* ââ Priorities ââ */
-
+        /* ── Priorities ── */
         .priorities {
-
             background: var(--grey-light);
-
         }
-
-
 
         .priorities-grid {
-
             display: grid;
-
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
             gap: 2rem;
-
         }
-
-
 
         .priority-card {
-
             background: #fff;
-
             border-radius: 10px;
-
             padding: 2rem;
-
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-
             border-top: 4px solid var(--labour-red);
-
             transition: transform 0.2s;
-
         }
-
-
 
         .priority-card:hover {
-
             transform: translateY(-4px);
-
         }
-
-
 
         .priority-icon {
-
             font-size: 2rem;
-
             margin-bottom: 1rem;
-
             display: inline-block;
-
             width: 56px;
-
             height: 56px;
-
             line-height: 56px;
-
             text-align: center;
-
             background: #fce4ec;
-
             border-radius: 12px;
-
         }
-
-
 
         .priority-card h3 {
-
             font-size: 1.2rem;
-
             margin-bottom: 0.6rem;
-
         }
-
-
 
         .priority-card p {
-
             color: #555;
-
             font-size: 0.95rem;
-
         }
 
-
-
-        /* ââ About ââ */
-
+        /* ── About ── */
         .about {
-
             background: #fff;
-
         }
-
-
 
         .about-grid {
-
             display: grid;
-
             grid-template-columns: 1fr 1.5fr;
-
             gap: 3rem;
-
             align-items: center;
-
         }
-
-
 
         .about-photo {
-
             background: var(--grey-mid);
-
             border-radius: 12px;
-
             aspect-ratio: 4 / 5;
-
             display: flex;
-
             align-items: center;
-
             justify-content: center;
-
             color: #999;
-
             font-size: 0.95rem;
-
             text-align: center;
-
             padding: 1rem;
-
         }
-
-
 
         .about-text p {
-
             margin-bottom: 1rem;
-
             color: #444;
-
         }
-
-
 
         .about-text blockquote {
-
             border-left: 4px solid var(--labour-red);
-
             padding-left: 1.25rem;
-
             font-style: italic;
-
             color: #555;
-
             margin: 1.5rem 0;
-
             font-size: 1.1rem;
-
         }
 
-
-
-        /* ââ Get Involved ââ */
-
+        /* ── Get Involved ── */
         .get-involved {
-
             background: var(--dark-bg);
-
             color: var(--text-light);
-
         }
-
-
 
         .get-involved .section-subtitle {
-
             color: #aaa;
-
         }
-
-
 
         .get-involved .red-bar {
-
             background: var(--labour-red);
-
         }
-
-
 
         .involve-grid {
-
             display: grid;
-
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
             gap: 2rem;
-
         }
-
-
 
         .involve-card {
-
             background: rgba(255, 255, 255, 0.06);
-
             border: 1px solid rgba(255, 255, 255, 0.1);
-
             border-radius: 10px;
-
             padding: 2rem;
-
             text-align: center;
-
             transition: background 0.2s;
-
         }
-
-
 
         .involve-card:hover {
-
             background: rgba(255, 255, 255, 0.1);
-
         }
-
-
 
         .involve-card .icon {
-
             font-size: 2.2rem;
-
             margin-bottom: 1rem;
-
         }
-
-
 
         .involve-card h3 {
-
             margin-bottom: 0.5rem;
-
         }
-
-
 
         .involve-card p {
-
             color: #aaa;
-
             font-size: 0.9rem;
-
             margin-bottom: 1.25rem;
-
         }
 
-
-
-        /* ââ Contact ââ */
-
+        /* ── Contact ── */
         .contact {
-
             background: var(--grey-light);
-
         }
-
-
 
         .contact-grid {
-
             display: grid;
-
             grid-template-columns: 1fr 1fr;
-
             gap: 3rem;
-
         }
-
-
 
         .contact-info-item {
-
             display: flex;
-
             gap: 1rem;
-
             margin-bottom: 1.5rem;
-
             align-items: flex-start;
-
         }
-
-
 
         .contact-info-item .icon-circle {
-
             flex-shrink: 0;
-
             width: 44px;
-
             height: 44px;
-
             background: var(--labour-red);
-
             color: #fff;
-
             border-radius: 50%;
-
             display: flex;
-
             align-items: center;
-
             justify-content: center;
-
             font-size: 1.1rem;
-
         }
-
-
 
         .contact-info-item h4 {
-
             font-size: 0.95rem;
-
             margin-bottom: 0.15rem;
-
         }
-
-
 
         .contact-info-item p {
-
             color: #555;
-
             font-size: 0.9rem;
-
         }
-
-
 
         .contact-form {
-
             display: flex;
-
             flex-direction: column;
-
             gap: 1rem;
-
         }
-
-
 
         .contact-form input,
-
         .contact-form textarea {
-
             padding: 0.85rem 1rem;
-
             border: 1px solid var(--grey-mid);
-
             border-radius: 6px;
-
             font-family: inherit;
-
             font-size: 0.95rem;
-
             width: 100%;
-
             background: #fff;
-
         }
-
-
 
         .contact-form input:focus,
-
         .contact-form textarea:focus {
-
             outline: none;
-
             border-color: var(--labour-red);
-
             box-shadow: 0 0 0 3px rgba(228, 0, 59, 0.1);
-
         }
-
-
 
         .contact-form textarea {
-
             resize: vertical;
-
             min-height: 120px;
-
         }
 
-
-
-        /* ââ Footer ââ */
-
+        /* ── Footer ── */
         footer {
-
             background: var(--dark-bg);
-
             color: #aaa;
-
             text-align: center;
-
             padding: 2rem;
-
             font-size: 0.85rem;
-
         }
-
-
 
         footer p + p {
-
             margin-top: 0.4rem;
-
         }
-
-
 
         footer a {
-
             color: var(--labour-red);
-
             text-decoration: none;
-
         }
 
-
-
-        /* ââ Responsive ââ */
-
+        /* ── Responsive ── */
         @media (max-width: 768px) {
-
             nav ul {
-
                 display: none;
-
                 position: absolute;
-
                 top: 100%;
-
                 left: 0;
-
                 right: 0;
-
                 background: var(--dark-bg);
-
                 flex-direction: column;
-
                 padding: 1rem 2rem;
-
                 gap: 0.75rem;
-
             }
-
-
 
             nav ul.open {
-
                 display: flex;
-
             }
-
-
 
             .mobile-menu-btn {
-
                 display: block;
-
             }
-
-
 
             .hero {
-
                 padding: 8rem 1.5rem 4rem;
-
             }
-
-
 
             .hero h1 {
-
                 font-size: 2.2rem;
-
             }
-
-
 
             .hero .tagline {
-
                 font-size: 1.05rem;
-
             }
-
-
 
             .about-grid {
-
                 grid-template-columns: 1fr;
-
             }
-
-
 
             .about-photo {
-
                 max-width: 320px;
-
                 margin: 0 auto;
-
             }
-
-
 
             .contact-grid {
-
                 grid-template-columns: 1fr;
-
             }
-
-
 
             section {
-
                 padding: 3.5rem 1.5rem;
-
             }
-
         }
-
     </style>
-
 </head>
-
 <body>
 
-
-
 <!-- Navigation -->
-
 <nav>
-
     <a href="#" class="logo"><span>Labour</span> | Gosforth</a>
-
     <button class="mobile-menu-btn" aria-label="Toggle menu" onclick="document.querySelector('nav ul').classList.toggle('open')">&#9776;</button>
-
     <ul>
-
         <li><a href="#priorities">Priorities</a></li>
-
         <li><a href="#about">About</a></li>
-
+        <li><a href="#community" style="color: #25D366;">Join Us</a></li>
         <li><a href="#involve">Get Involved</a></li>
-
         <li><a href="#contact">Contact</a></li>
-
     </ul>
-
 </nav>
 
-
-
 <!-- Hero Banner -->
-
 <section class="hero">
-
     <div class="hero-content">
-
         <div class="ward-label">Labour candidate &mdash; Gosforth Ward</div>
-
         <h1>Jonathan Sabarre</h1>
-
         <p class="tagline">Gosforth has never had a Labour councillor. Let's make history together.</p>
-
         <div class="hero-buttons">
-
-            <a href="#involve" class="btn btn-white">Be part of the change</a>
-
+            <a href="https://chat.whatsapp.com/K0bvhdmaB90Gl9BRnY2UCT" class="btn btn-whatsapp" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                <svg class="wa-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Join the Gosforth community
+            </a>
             <a href="#priorities" class="btn btn-outline">Our priorities</a>
-
         </div>
-
     </div>
-
 </section>
-
-
 
 <!-- Key Local Priorities -->
-
 <section class="priorities" id="priorities">
-
     <div class="section-inner">
-
         <div class="red-bar"></div>
-
         <h2 class="section-title">Key Priorities for Gosforth</h2>
-
         <p class="section-subtitle">The issues that matter most to our community</p>
 
-
-
         <div class="priorities-grid">
-
             <div class="priority-card">
-
                 <div class="priority-icon">&#127971;</div>
-
                 <h3>A Thriving High Street</h3>
-
                 <p>Gosforth High Street is the heart of our community. I'll champion our independent shops, cafes, and businesses &mdash; fighting for a High Street that's vibrant, accessible, and built around what residents actually want.</p>
-
             </div>
-
             <div class="priority-card">
-
                 <div class="priority-icon">&#128652;</div>
-
                 <h3>Transport That Works for Everyone</h3>
-
                 <p>Better bus services, safer streets for walking and cycling, and traffic management shaped by genuine consultation &mdash; not top-down decisions. Gosforth residents deserve a say in how our streets are designed.</p>
-
             </div>
-
             <div class="priority-card">
-
                 <div class="priority-icon">&#127793;</div>
-
                 <h3>Protecting Our Green Spaces</h3>
-
                 <p>From Gosforth Central Park to our tree-lined streets, I'll defend the green spaces that make our ward special &mdash; resisting overdevelopment and investing in play areas, community gardens, and cleaner air for families.</p>
-
             </div>
-
             <div class="priority-card">
-
                 <div class="priority-icon">&#127960;</div>
-
                 <h3>Homes People Can Afford</h3>
-
                 <p>Rising prices are pushing young families and key workers out of Gosforth. I'll push for genuinely affordable housing in new developments and stand against schemes that don't serve our community's needs.</p>
-
             </div>
-
             <div class="priority-card">
-
                 <div class="priority-icon">&#127979;</div>
-
                 <h3>Excellent Schools &amp; Opportunities</h3>
-
                 <p>As a school governor for Gosforth Academy and Callerton School &mdash; and former Chair of the governing boards of Farne and Cheviot Schools &mdash; I know our schools inside out. I'll fight to protect funding and ensure every child in Gosforth gets the start they deserve.</p>
-
             </div>
-
             <div class="priority-card">
-
                 <div class="priority-icon">&#129309;</div>
-
                 <h3>Health &amp; Community Wellbeing</h3>
-
                 <p>As a trustee of HealthWORKS Newcastle for six years, I've worked to help our community live happier, healthier, longer lives. I'll fight for better GP access, mental health support, and community services that reach every family in Gosforth.</p>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
-
-
 
 <!-- About Me -->
-
 <section class="about" id="about">
-
     <div class="section-inner">
-
         <div class="about-grid">
-
             <div class="about-photo" style="background: none; overflow: hidden; padding: 0;">
-
                 <img src="bio.jpg" alt="Jonathan Sabarre - Labour candidate for Gosforth" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
-
             </div>
-
             <div class="about-text">
-
                 <div class="red-bar"></div>
-
                 <h2 class="section-title">About Jonathan</h2>
-
                 <p>I'm <strong>Jonathan Sabarre</strong> &mdash; a father, a football coach, a school governor, and someone who believes Gosforth deserves a councillor who will actually be heard where decisions are made.</p>
-
                 <p>Professionally, I'm a <strong>Principal Consultant for QS</strong> across the UK and Europe &mdash; supporting over 2,000 universities, 12,000 employers, and 75,000 students worldwide to shape the future of education. I'm a Fellow of the Chartered Institute of Marketing, with over 20 years of experience bringing people together, solving problems, and delivering results across the public, private, and higher education sectors.</p>
-
                 <p>I'm currently in the final year of my <strong>PhD in Health Informatics</strong>, researching how technology can support the earlier detection of dementia &mdash; work driven by a deeply personal belief that every family deserves more time with the people they love.</p>
-
                 <p>Closer to home, I've served as <strong>Chair of the joint governing boards of Farne and Cheviot Schools</strong> for four years, and I'm currently a school governor for <strong>Gosforth Academy</strong> and <strong>Callerton School</strong>. For six years I've been a trustee of <strong>HealthWORKS Newcastle</strong>, helping our community live happier, healthier, longer lives. I also serve as a <strong>Parish Councillor</strong> in Woolsington. And perhaps the role that brings me the most reward &mdash; I've proudly coached my daughter's U10 football team for four years.</p>
-
                 <blockquote>"Gosforth has never had a Labour councillor. That means our ward has never had a voice at the heart of Newcastle's Labour-led council. I want to change that &mdash; and I'm asking you to be part of this historic moment."</blockquote>
-
                 <p>For too long, Gosforth's representatives have lacked the connections to deliver real change at a council level. I'm standing for Labour because I believe residents deserve a councillor who can get things done &mdash; someone who will invest in our High Street, protect our green spaces, champion our schools, and ensure every voice in Gosforth is finally heard where it matters most.</p>
-
-                <a href="#contact" class="btn btn-red" style="margin-top: 0.5rem;">Get in touch</a>
-
+                <a href="https://chat.whatsapp.com/K0bvhdmaB90Gl9BRnY2UCT" class="btn btn-whatsapp" style="margin-top: 0.5rem; display: inline-flex; align-items: center; gap: 0.5rem;" target="_blank" rel="noopener">
+                    <svg class="wa-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Join the conversation
+                </a>
+                <a href="#contact" class="btn btn-red" style="margin-top: 0.5rem;">Or send a message</a>
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-
+<!-- WhatsApp Community CTA -->
+<section class="whatsapp-cta" id="community">
+    <div class="section-inner" style="padding: 1rem 0;">
+        <div class="whatsapp-icon-large">&#128172;</div>
+        <h2>Join the Gosforth Conversation</h2>
+        <p class="lead">This campaign belongs to you. Join our WhatsApp community to share what matters to you, hear what your neighbours are saying, and help shape a better Gosforth &mdash; together, in real time.</p>
+        <div class="whatsapp-buttons">
+            <a href="https://chat.whatsapp.com/K0bvhdmaB90Gl9BRnY2UCT" class="btn-wa-hero" target="_blank" rel="noopener">
+                <svg class="wa-svg" style="fill: #075E54;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Join the WhatsApp community
+            </a>
+            <a href="https://wa.me/447876129173" class="btn-wa-secondary" target="_blank" rel="noopener">
+                <svg class="wa-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Message Jonathan directly
+            </a>
+        </div>
+        <p class="member-count">07876 129 173 &mdash; text or WhatsApp anytime</p>
+    </div>
+</section>
 
 <!-- Get Involved -->
-
 <section class="get-involved" id="involve">
-
     <div class="section-inner">
-
         <div class="red-bar"></div>
-
         <h2 class="section-title">Get Involved</h2>
-
         <p class="section-subtitle">Gosforth has never had a Labour councillor. This is our chance to make history. Every conversation, every leaflet, every shared post brings us closer to the change Gosforth deserves.</p>
 
-
-
         <div class="involve-grid">
-
+            <div class="involve-card" style="border: 1px solid #25D366; background: rgba(37, 211, 102, 0.08);">
+                <div class="icon">&#128172;</div>
+                <h3>Join the WhatsApp Group</h3>
+                <p>Connect with your neighbours, share local issues, and be part of the campaign conversation in real time.</p>
+                <a href="https://chat.whatsapp.com/K0bvhdmaB90Gl9BRnY2UCT" class="btn btn-whatsapp" target="_blank" rel="noopener">Join now</a>
+            </div>
             <div class="involve-card">
-
                 <div class="icon">&#128075;</div>
-
                 <h3>Volunteer</h3>
-
                 <p>Join us on the doorstep, deliver leaflets, or help out on polling day. Every hour makes a difference.</p>
-
-                <a href="#contact" class="btn btn-red">Sign up</a>
-
+                <a href="https://wa.me/447876129173?text=Hi%20Jonathan%2C%20I'd%20like%20to%20volunteer%20for%20the%20Gosforth%20campaign" class="btn btn-red" target="_blank" rel="noopener">Sign up</a>
             </div>
-
             <div class="involve-card">
-
                 <div class="icon">&#128232;</div>
-
                 <h3>Display a Poster</h3>
-
                 <p>Show your support by putting a Labour poster in your window. We'll drop one round to you.</p>
-
-                <a href="#contact" class="btn btn-red">Request a poster</a>
-
+                <a href="https://wa.me/447876129173?text=Hi%20Jonathan%2C%20I'd%20like%20a%20poster%20for%20my%20window%20please" class="btn btn-red" target="_blank" rel="noopener">Request a poster</a>
             </div>
-
             <div class="involve-card">
-
-                <div class="icon">&#128227;</div>
-
-                <h3>Spread the Word</h3>
-
-                <p>Share our campaign with friends, family and neighbours. Follow us on social media and share our posts.</p>
-
-                <a href="#contact" class="btn btn-red">Follow us</a>
-
-            </div>
-
-            <div class="involve-card">
-
                 <div class="icon">&#127801;</div>
-
                 <h3>Join Labour</h3>
-
                 <p>Become a Labour Party member and help shape the future of our community from the inside.</p>
-
                 <a href="https://join.labour.org.uk" class="btn btn-red" target="_blank" rel="noopener">Join today</a>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
-
-
 
 <!-- Contact -->
-
 <section class="contact" id="contact">
-
     <div class="section-inner">
-
         <div class="red-bar"></div>
-
         <h2 class="section-title">Contact</h2>
-
         <p class="section-subtitle">Whether it's a pothole, a planning concern, or an idea for Gosforth &mdash; I want to hear from you.</p>
 
-
-
-        <div style="max-width: 600px; margin: 0 auto;">
-
-            <form class="contact-form" name="contact" method="POST" data-netlify="true" action="/thank-you.html">
-
-                <input type="hidden" name="form-name" value="contact">
-
-                <input type="hidden" name="to" value="jonathan@jonathanforgosforth.uk">
-
-                <input type="text" name="name" placeholder="Your name" required>
-
-                <input type="email" name="email" placeholder="Your email" required>
-
-                <input type="text" name="subject" placeholder="Subject">
-
-                <textarea name="message" placeholder="Your message" required></textarea>
-
-                <button type="submit" class="btn btn-red">Send Message</button>
-
-            </form>
-
+        <div class="contact-grid">
+            <div>
+                <div class="contact-info-item">
+                    <div class="icon-circle" style="background: #25D366;">&#128172;</div>
+                    <div>
+                        <h4>WhatsApp Community</h4>
+                        <p>Join other Gosforth residents sharing ideas and raising local issues</p>
+                        <a href="https://chat.whatsapp.com/K0bvhdmaB90Gl9BRnY2UCT" target="_blank" rel="noopener" style="color: #25D366; font-weight: 600; text-decoration: none;">Join the group &rarr;</a>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="icon-circle" style="background: #25D366;">&#128241;</div>
+                    <div>
+                        <h4>Message Jonathan Directly</h4>
+                        <p><a href="https://wa.me/447876129173" target="_blank" rel="noopener" style="color: #25D366; font-weight: 600; text-decoration: none;">07876 129 173</a> &mdash; WhatsApp or text anytime</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="icon-circle">&#9993;</div>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:jonathan@jonathanforgosforth.uk" style="color: var(--labour-red); text-decoration: none;">jonathan@jonathanforgosforth.uk</a></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <form class="contact-form" name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+                    <input type="hidden" name="form-name" value="contact">
+                    <input type="hidden" name="to" value="jonathan@jonathanforgosforth.uk">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Your message" required></textarea>
+                    <button type="submit" class="btn btn-red">Send Message</button>
+                </form>
+            </div>
         </div>
-
     </div>
-
 </section>
 
-
-
 <!-- Footer -->
-
 <footer>
-
     <p>Promoted by Jonathan Sabarre, 34 Lazonby Way, Newcastle Upon Tyne, NE5 4EP, on behalf of Jonathan Sabarre, 34 Lazonby Way, Newcastle Upon Tyne, NE5 4EP.</p>
-
     <p style="margin-top: 0.75rem;">&copy; 2026 Labour for Gosforth | <a href="https://www.jonathanforgosforth.uk">jonathanforgosforth.uk</a> | <a href="imprint.html">Imprint</a> | <a href="privacy.html">Privacy</a></p>
-
 </footer>
 
-
-
 </body>
-
 </html>
-
